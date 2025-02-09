@@ -1,0 +1,19 @@
+h1{
+    color:blue;
+    background-color:yellow;
+    border: double;
+    font:italic bold 40px/40px Georgia, serif;
+  }
+  .heading{
+    color:darkviolet;
+    font-style:italic;
+   font-size:30px;
+  }
+  p{
+    font-size:20px;
+  }
+.footer{
+     font-size:35px;
+    color:red; 
+    font-style:italic;
+}
