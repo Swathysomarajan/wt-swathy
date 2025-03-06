@@ -8,7 +8,8 @@ th{
 }
 summary{
 	color:black;
-	font-style:bold;
+	font-style:italic;
+	font-size:30px;
 }
 table{
 	border:solid black;
