@@ -3,11 +3,11 @@ th{
 	color:black;
 	letter-spacing:1px;
 	text-align:center;
-	background-color:#5178b8;
+	background-color:#3fb7eb;
 }
 summary{
-	color:blue;
-	font-family:"Rock Salt",cursive;
+	color:black;
+	font-family:"Rock Salt",sanserif,bold;
 }
 table{
 	border:solid black;
@@ -15,6 +15,6 @@ table{
 td{
 	color:red;
 	text-align:center;
-	background-color:#edd7ca;
+	background-color:#dd94e0;
 }
 
