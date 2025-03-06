@@ -1,0 +1,21 @@
+th{
+	font-family:"Rock Salt",arial,sans-serif;
+	color:green;
+	letter-spacing:1px;
+	text-align:center;
+	background-color:pink;
+}
+summary{
+	color:blue;
+	font-family:"Rock Salt",cursive;
+}
+table{
+	backgroud-color:#ff33cc;
+	border:solid green;
+}
+td{
+	color:red;
+	text-align:center;
+	background-color:pink;
+}
+
