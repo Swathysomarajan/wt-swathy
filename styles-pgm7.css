@@ -3,18 +3,21 @@ th{
 	color:black;
 	letter-spacing:1px;
 	text-align:center;
-	background-color:#3fb7eb;
+	background-color:#c351c9;
+	border-radius:5px;
 }
 summary{
 	color:black;
-	font-style:italic , bold;
+	font-style:bold;
 }
 table{
 	border:solid black;
+	border-radius:5px;
 }
 td{
 	color:black;
 	text-align:center;
-	background-color:#dd94e0;
+	background-color:#eca3f0;
+	border-radius:5px;
 }
 
