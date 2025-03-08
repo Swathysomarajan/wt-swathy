@@ -4,7 +4,7 @@ nav {
 }
 nav ul li {
     display: inline;
-    margin:30px;
+    margin:40px;
     font-size:20px;
 }
 nav ul li a {
@@ -17,7 +17,7 @@ nav ul li a:hover {
 h2 {
     color: #0a260e;
     text-align: center;
-    font-size:50px;
+    font-size:45px;
 }
 h4 {
     color: #105217;
