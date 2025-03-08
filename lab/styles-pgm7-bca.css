@@ -43,3 +43,6 @@ dt {
 dd {
     margin-bottom: 20px;
 }
+#about, #faculty, #facilities {
+    font-size:20px;
+}
