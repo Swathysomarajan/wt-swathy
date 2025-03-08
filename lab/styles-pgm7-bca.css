@@ -1,9 +1,11 @@
 h2 {
     color: #0a260e;
     text-align: center;
+    font-size:40px;
 }
 h4 {
     color: #105217;
+    font-size:25px;
 }
 li {
     margin-bottom: 10px;
