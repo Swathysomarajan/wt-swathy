@@ -1,5 +1,18 @@
-body{
+nav {
+    background-color: #333;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    margin:30px;
     font-size:20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration:none;
+}
+nav ul li a:hover {
+    text-decoration: underline;
 }
 h2 {
     color: #0a260e;
