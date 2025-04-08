@@ -1,4 +1,4 @@
-#include<stdio.h>
+        #include<stdio.h>
 #include<stdlib.h>
 #define MAX_SIZE 25
 #define max(a, b) a>b ? a : b
@@ -9,7 +9,11 @@ struct TreeNode
     struct TreeNode* left;
     struct TreeNode* right;
 };
+ 
+// global root declaration
 struct TreeNode* root = NULL;
+ 
+// function prototyping
 void insert(int);
 void delete(int);
 int search(int);
@@ -118,6 +122,8 @@ struct TreeNode* create(int data)
  
     return new_node;
 }
+ 
+// inserts a new node in the tree
 void insert(int data)
 {
     if(root == NULL)
@@ -176,10 +182,13 @@ if(temp->right != NULL)
  
 void delete(int key)
 {
+    // Tree is empty
     if(root == NULL)
     {
         return;
     }
+ 
+    // Tree having only one node
     if(root->left == NULL && root->right == NULL)
     {
 if(root->val == key)
@@ -193,6 +202,8 @@ if(root->val == key)
             return;
         }
     }
+ 
+    // level order traversal using the queue
     struct TreeNode* temp = NULL, *last_node = NULL, *key_node = NULL;
  
     struct TreeNode* queue[MAX_SIZE];
@@ -201,6 +212,8 @@ if(root->val == key)
  
     queue[front + 1] = root;
     front = rear = 0;
+ 
+    // do level order traversal to find the deepest node
     while (front <= rear)
     {
         temp = queue[front];
@@ -223,9 +236,14 @@ key_node = temp;
             queue[++rear] = temp->right;
         }
     }
+ 
+    // if key is found in the binary tree
     if (key_node != NULL)
     {
+        // replace the keynode data with the deepest node
         key_node->val = temp->val;
+ 
+        // free the last node after updating its parent
         if (last_node->right == temp)
         {
             last_node->right = NULL;
@@ -253,6 +271,8 @@ int search(int key)
  
     queue[front + 1] = root;
     front = rear = 0;
+ 
+    // do level order traversal to find the deepest node
     while (front <= rear)
     {
         struct TreeNode* temp = queue[front];
@@ -294,6 +314,8 @@ int height(struct TreeNode* root)
         return right + 1;
     }
 }
+ 
+// inorder traversal
 void inorder(struct TreeNode* root)
 {
     if(root == NULL) return;
@@ -302,6 +324,8 @@ void inorder(struct TreeNode* root)
     printf("%d ", root->val);
     inorder(root->right);
 }
+ 
+// preorder traversal
 void preorder(struct TreeNode* root)
 {
     if(root == NULL) return;
@@ -310,6 +334,8 @@ void preorder(struct TreeNode* root)
     preorder(root->left);
     preorder(root->right);
 }
+ 
+// postorder traversal
 void postorder(struct TreeNode* root)
 {
 if(root == NULL) return;
@@ -318,6 +344,8 @@ if(root == NULL) return;
     postorder(root->right);
     printf("%d ", root->val);
 }
+ 
+// level order traversal
 void levelorder()
 {
     if (root == NULL)
@@ -332,6 +360,8 @@ void levelorder()
  
     queue[front + 1] = root;
     front = rear = 0;
+ 
+    // do level order traversal to find the deepest node
     while (front <= rear)
     {
         struct TreeNode* temp = queue[front];
